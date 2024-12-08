@@ -1,0 +1,17 @@
+{
+  "name": "mines-game",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.10.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  }
+}

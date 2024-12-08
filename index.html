@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mines Game</h1>
+        
+        <div id="wallet-section">
+            <div id="wallet-status">Wallet not connected</div>
+            <button id="connect-wallet">Connect Petra Wallet</button>
+        </div>
+
+        <div id="game-section" class="hidden">
+            <div class="bet-section">
+                <input type="number" id="bet-amount" placeholder="Enter bet amount" min="0" step="0.1">
+                <button id="place-bet">Place Bet</button>
+            </div>
+
+            <div class="game-container">
+                <div class="game-grid"></div>
+                
+                <div class="game-stats">
+                    <div class="stat">
+                        <span>Current Multiplier</span>
+                        <span id="current-multiplier">1.00x</span>
+                    </div>
+                    <div class="stat">
+                        <span>Next Multiplier</span>
+                        <span id="next-multiplier">1.20x</span>
+                    </div>
+                    <div class="stat">
+                        <span>Success Chance</span>
+                        <span id="success-chance">100%</span>
+                    </div>
+                    <button id="cashout" class="hidden">Cash Out</button>
+                </div>
+            </div>
+
+            <div id="game-result" class="hidden"></div>
+        </div>
+    </div>
+    <script type="module" src="/js/wallet.js"></script>
+    <script type="module" src="/js/game.js"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
